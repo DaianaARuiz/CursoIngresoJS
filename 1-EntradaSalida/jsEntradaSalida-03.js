@@ -4,8 +4,16 @@ y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	var nombreIngresado;
-	nombreIngresado=txtIdNombre.value;
-	alert("ok");
+
+
+	// txtIdNombre para llamar al cuadro de texto, es
+	//es el id del html. value(para acceder al VALOR)
+	
+	// nombreIngresado=txtIdNombre.value;
+
+	nombreIngresado= document.getElementById('txtIdNombre').value;
+
+	alert(nombreIngresado);
 
 }
 
