@@ -18,4 +18,24 @@ alert("Usted se llama nombre y tiene edad años")*/
 
 
 }
+//entrada
+/*	edadIngresada=33;	
+
+	nombreIngresado=prompt("ingrese su nombre");
+
+	edadIngresada=txtIdEdad.value;
+	edadIngresada=document.getElementById('txtIdEdad').value;
+
+
+	//salida
+	alert(nombreIngresado);
+	alert("mensaje");
+	alert("mensaje "+ nombreIngresado);
+
+	txtIdEdad.value="texto";
+	txtIdEdad.value=33;
+	txtIdEdad.value=edadIngresada;
+	document.getElementById('txtIdEdad').value=edadIngresada;
+*/
+
 
