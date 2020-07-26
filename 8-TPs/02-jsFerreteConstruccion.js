@@ -4,15 +4,72 @@ B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un ter
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
 
-function Rectangulo () 
+
+
+function Rectangulo() 
 {
+	// Declaro variables: 
+	var largoIngresado;
+	var anchoIngresado;
+	var perimetroCalculado;
+	var cantidadAlambreCalculado;
+
+	// Cargo variable con valor del cuadro de texto 
+	largoIngresado= txtIdLargo.value;
+	// Transformo ese string en numero
+	largoIngresado=parseInt(largoIngresado);
+
+	anchoIngresado= txtIdAncho.value;
+	anchoIngresado=parseInt(anchoIngresado);
+
+	// Calculo el perimetro de un rectangulo
+	perimetroCalculado= 2*largoIngresado + 2*anchoIngresado;
+
+	// Se necesitan 3 alambres en cada lado 
+	cantidadAlambreCalculado= perimetroCalculado*3;
+
+	// Muesto por alert 
+	alert("Necesitaras: "+ cantidadAlambreCalculado + " metros de alambre.");
 
 }
-function Circulo () 
+
+function Circulo() 
 {
-	
+	var radioIngresado;
+	var circunferenciaCalculada;
+	var cantidadAlambreCalculado;
+
+	radioIngresado = txtIdRadio.value;
+	radioIngresado=parseInt(radioIngresado);
+
+	circunferenciaCalculada= 2*3.14*radioIngresado;
+
+	cantidadAlambreCalculado= circunferenciaCalculada * 3; 
+
+	alert("Necesitaras: "+ cantidadAlambreCalculado + " metros de alambre.");
 }
-function Materiales () 
+
+
+function Materiales() 
 {
+	var largoIngresado;
+	var anchoIngresado;
+	var areaCalculada;
+	var cantidadCementoNecesario;
+	var cantidadCalNecesaria;
 	
+	 
+	largoIngresado= txtIdLargo.value;
+	largoIngresado=parseInt(largoIngresado);
+
+	anchoIngresado= txtIdAncho.value;
+	anchoIngresado=parseInt(anchoIngresado);
+
+	areaCalculada= largoIngresado*anchoIngresado;
+
+	cantidadCementoNecesario= areaCalculada*2;
+	cantidadCalNecesaria=areaCalculada*3;
+
+	alert("Necesitaras: " + cantidadCementoNecesario + " bolsas de cemento, y " + 
+		cantidadCalNecesaria + " bolsas de cal.");
 }
